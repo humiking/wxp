@@ -1,0 +1,8 @@
+.log-list {
+  display: flex;/*显示为弹性 */
+  flex-direction: column;/*弹性布局，以列的方式进行*/
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}

@@ -1,0 +1,8 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <!--微信特殊写法该模块下，遍历显示日志-->
+  <!--<block/> 并不是一个组件，它仅仅是一个包装元素，不会在页面中做任何渲染，只接受控制属性。   可以用来做列表渲染，即wx:for=""调用logs数组的元素，不写就是用默认变量item-->
+  <block wx:for="{{logs}}" >
+    <text class="log-item">{{index + 1}}. {{item}}</text>
+  </block>
+</view>
